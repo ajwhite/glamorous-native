@@ -12,6 +12,7 @@
 [![PRs Welcome][prs-badge]][prs]
 [![Chat][chat-badge]][chat]
 [![Examples][examples-badge]][examples]
+[![Semantic Releases][semantic-release-badge]][semantic-release]
 
 ## The Problem
 
@@ -69,6 +70,22 @@ function Section() {
 > See more [examples][examples]!
 
 So that's the basics of this solution.. Let's get to the details!
+
+## Installation
+
+This module is distributed via [npm][npm] and should be installed as one of your project's `dependencies`:
+
+```
+npm install --save glamorous-native
+```
+
+This also depends on `react` and `react-native`; you likely already have these dependencies since React Native projects are generally [scaffolded][react-native-get-started-scaffold].
+
+From here you can now import this module:
+
+```js
+import glamorous, {ThemeProvider} from 'glamorous-native'
+```
 
 ## Terms and concepts
 
@@ -494,11 +511,6 @@ class SubTitle extends Component {
 
 > `withTheme` expects a `ThemeProvider` further up the render tree and will warn in `development` if one is not found!
 
-
-## Installation
-
-TBD
-
 ## Inspiration
 
 This package was inspired by the work from people's work on the following projects:
@@ -511,7 +523,6 @@ This package was inspired by the work from people's work on the following projec
 This project is in active development approaching completion. Your contributions are welcome! Take a look at the [contributing guide][contributing] and browse through the [good first task issues](https://github.com/robinpowered/glamorous-native/labels/good%20first%20task).
 
 
-
 [build-badge]: https://img.shields.io/travis/robinpowered/glamorous-native.svg?style=flat-square
 [build]: https://travis-ci.org/robinpowered/glamorous-native
 [coverage-badge]: https://img.shields.io/codecov/c/github/robinpowered/glamorous-native.svg?style=flat-square
@@ -522,12 +533,16 @@ This project is in active development approaching completion. Your contributions
 [prs]: http://makeapullrequest.com
 [examples-badge]: https://img.shields.io/badge/%F0%9F%92%A1-examples-8C8E93.svg?style=flat-square
 [examples]: ./examples
+[semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
+[semantic-release]: https://github.com/robinpowered/glamorous-native/releases
 [chat]: https://gitter.im/paypal/glamorous
 [chat-badge]: https://img.shields.io/gitter/room/paypal/glamorous.svg?style=flat-square
 [contributing]: ./CONTRIBUTING.md
 [glamorous]: https://github.com/paypal/glamorous
 [glamorous-readme]: https://github.com/paypal/glamorous#readme
 [intro-blogpost]: https://hackernoon.com/introducing-glamorous-fb3c9f4ed20e
+[npm]: https://www.npmjs.com/
 [react-native-stylesheet]: https://facebook.github.io/react-native/docs/stylesheet.html
 [react-devtools]: https://github.com/facebook/react-devtools
 [react-unknown-props]: https://facebook.github.io/react/warnings/unknown-prop.html
+[react-native-get-started-scaffold]: https://facebook.github.io/react-native/docs/getting-started.html#testing-your-react-native-installation
